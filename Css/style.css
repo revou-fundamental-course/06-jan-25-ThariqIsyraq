@@ -24,3 +24,25 @@
 body {
     font-family: var(--primary-font), var(--secondary-font), var(--tertiary-font);
 }
+
+/* Navigation Bar */
+
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+}
+
+.information-list > a {
+    font-family: ;
+    margin: 8px;
+    padding: 10px;
+}
+
+#btn-nama {
+    height: 40px;
+    padding: 10px;
+}
+
+/* Navigation Bar */
