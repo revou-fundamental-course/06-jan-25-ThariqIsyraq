@@ -4,10 +4,10 @@
 
 /* :root for CSS Variables */
 :root {
-    --primary-color: #4CAF50;
-    --secondary-color: #333;
-    --text-color: #555;
-    --background-color: #f9f9f9;
+    --primary-color: #4C585B;
+    --secondary-color: #7E99A3;
+    --background-color: #A5BFCC;
+    --text-color: #F4EDD3;
     --primary-font: 'Quicksand', sans-serif;
     --secondary-font: 'Roboto', sans-serif;
     --tertiary-font: 'Bebas Neue', sans-serif;
@@ -18,7 +18,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
 
 body {
@@ -30,19 +29,51 @@ body {
 #main-header {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    padding: 20px;
     align-items: center;
+    height: 140px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.logo-image {
+    height: 100px;
+    width: 100px;
 }
 
 .information-list > a {
-    font-family: ;
+    font-family: var(--primary-font);
+    font-weight: 350;
+    font-size: 35px;
     margin: 8px;
     padding: 10px;
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 #btn-nama {
-    height: 40px;
-    padding: 10px;
+    height: 70px;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 10px;
+    font-size: 35px;
+    font-family: var(--primary-font);
 }
 
 /* Navigation Bar */
+
+/* Content */
+
+.skill-pics {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Content */
