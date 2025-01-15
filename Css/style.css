@@ -1,0 +1,26 @@
+/* Google Fonts: - Quicksand
+                 - Roboto 
+                 - Bebas Neue   */
+
+/* :root for CSS Variables */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #333;
+    --text-color: #555;
+    --background-color: #f9f9f9;
+    --primary-font: 'Quicksand', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+    --tertiary-font: 'Bebas Neue', sans-serif;
+}   
+  
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--primary-font), var(--secondary-font), var(--tertiary-font);
+}
