@@ -216,3 +216,41 @@ body {
     color: var(--text-color);
     text-align: end;
 }
+
+/* Smartphone */
+@media (max-width: 376px) {
+    #btn-nama {
+        width: 210px;
+        margin-top: 20px; 
+    }
+}
+
+/* Smartphone 2 */
+@media (max-width: 415px) {
+    #btn-nama {
+        width: 210px;
+        margin-top: 20px; 
+    }
+}
+
+/* Smartphone 3 */
+@media (max-width: 431px) {
+    #btn-nama {
+        width: 210px;
+        margin-top: 20px; 
+    }
+}
+
+/* Tablet */
+@media (max-width: 570px) {
+    #btn-nama {
+        width: 100px;
+    }
+}
+
+@media (max-width: 510px) {
+    #btn-nama {
+        width: 210px;
+        margin-top: 20px; 
+    }
+}
