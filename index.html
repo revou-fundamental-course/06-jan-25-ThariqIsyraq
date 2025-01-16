@@ -4,88 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portofolio</title>
+    <title>My Portfolio</title>
 
     <!-- Link CSS -->
-    <link rel="stylesheet" href="Css\style.css">
+    <link rel="stylesheet" href="Css/style.css">
 
-    <!-- Link Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
-    <!-- Link Icons  -->
-    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
     <!-- Navigation Bar -->
-
     <header id="main-header">
-        <a href="#"><img src="Images\Logo.png" alt="My-Logo" class="logo-image"></a>
-        <div class="information-list">
-            <a href="">About</a>
-            <a href="#skills-page">Skills</a>
-            <a href="">Portofolio</a>
-            <button id="btn-nama" name="btn-nama">Change name</button>
-        </div>
+        <a href="#"><img src="Images/Logo.png" alt="My Logo" class="logo-image"></a>
+        <nav class="nav-links">
+            <a href="#about-section" id="about-btn">About</a>
+            <a href="#portfolio-section" id="portfolio-btn">Portfolio</a>
+            <a href="#skills-page" id="skills-link">Skills</a>
+            <button id="btn-nama">Change Name</button>
+        </nav>
     </header>
 
-    <!-- Navigation Bar -->
-
-    <!-- Content -->
-
-    <main id="main-content">
-
-        <!-- Welcome page -->
-        <h1>Hi <span>rid</span>, Welcome to my Website</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        <div>
-            <img src="Images\Profile.jpg" alt="My-Photo">
+    <!-- Popup Modal About -->
+    <div id="about-popup" class="popup">
+        <div class="popup-content">
+            <span id="close-about-popup" class="close">&times;</span>
+            <h2>About Me</h2>
+            <p>Hi! I'm <strong>Thariq Isyraq</strong>, a passionate marine science graduate from Universitas Syiah
+                Kuala, Aceh. My journey in the field of environmental science has shaped my desire to understand and
+                protect our oceans and ecosystems.</p>
+            <p>I am also deeply interested in programming and digital content creation. I aim to
+                combine these skills to develop innovative solutions for environmental challenges and share knowledge
+                with a wider audience.</p>
+            <p>When I'm not working on my research or coding, you can find me learning new things, exploring the
+                outdoors, or working on my creative projects like video editing and graphic design.</p>
+            <p>Feel free to connect with me if you're interested in collaborations or just want to chat about marine
+                science, technology, or anything else!</p>
         </div>
-        <!-- Welcome page -->
+    </div>
 
-        <!-- Skills page -->
-        <div id="skills-page">
-            <h2>My Skills</h2>
-            <div>
-                <img src="Images\3d-design-picture.jpg" alt="3d-design-picture" class="skill-pics">
-    
-                <img src="Images\Logo-designer-picture.jpg" alt="Logo-designer-picture" class="skill-pics">
-    
-                <img src="Images\Video-editing-picture.jpg" alt="Video-editing-picture" class="skill-pics">
+    <!-- Popup Modal Portfolio -->
+    <div id="portfolio-popup" class="popup">
+        <div class="popup-content">
+            <span id="close-portfolio-popup" class="close">&times;</span>
+            <h2>My Portfolio</h2>
+           <a href="https://www.instagram.com/reel/C3KdC2syb_a/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="video-edit">my editing example <--</a>
+           <p>3d Project</p>
+           <img src="Images\3d-project.png" alt="3d-project" class="portofolio-pictures">
+            <p>Logo</p>
+            <img src="Images\Logo-1.png" alt="logo" class="portofolio-pictures">
+            <img src="Images\Logo-2.png" alt="logo" class="portofolio-pictures">
+            <img src="Images\Logo-3.jpg" alt="logo" class="portofolio-pictures">
+            <img src="Images\Logo.png" alt="logo" class="portofolio-pictures">
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Banner Section -->
+        <section id="banner-container">
+            <div id="welcome-speech">
+                <h1>Hi <span id="welcome-message"></span>, Welcome to my Website</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             </div>
-        </div>
+            <img src="Images/mountain-1.jpg" alt="Banner 1" class="banner active">
+            <img src="Images/mountain-2.jpg" alt="Banner 2" class="banner">
+            <img src="Images/mountain-3.jpg" alt="Banner 3" class="banner">
+        </section>
 
-        <!-- Skills page -->
+        <!-- Skills Section -->
+        <section id="skills-page">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <img src="Images/3d-design-picture.jpg" alt="3D Design" class="skill-pics">
+                    <p>3D Design</p>
+                </div>
+                <div class="skill-item">
+                    <img src="Images/Logo-designer-picture.jpg" alt="Logo Design" class="skill-pics">
+                    <p>Logo Design</p>
+                </div>
+                <div class="skill-item">
+                    <img src="Images/Video-editing-picture.jpg" alt="Video Editing" class="skill-pics">
+                    <p>Video Editing</p>
+                </div>
+            </div>
+        </section>
 
-        <!-- Form page -->
-        <form action="">
+        <!-- Form -->
+        <section id="message-form">
+            <h2>Message Us</h2>
+            <form id="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
 
-        </form>
-        <!-- Form page -->
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
 
+                <label for="dob">Your Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" id="submit-button">Submit</button>
+            </form>
+            <div id="form-result"></div>
+        </section>
     </main>
 
-    <!-- Content -->
-
-    <!-- Foooter -->
-
+    <!-- Footer -->
     <footer id="main-footer">
         <p>&copy; 2025 Thariq Isyraq. All Rights Reserved.</p>
     </footer>
-    </footer>
 
-    <!-- Foooter -->
-
-    <!-- Link Javascript -->
-
+    <!-- JavaScript -->
     <script src="Javascript/script.js"></script>
-
-    <!-- Link Javascript -->
-
 </body>
 
 </html>
